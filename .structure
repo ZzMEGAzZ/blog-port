@@ -1,0 +1,107 @@
+portfolio-blog/
+├── src/
+│   ├── app/
+│   │   ├── (auth)/
+│   │   │   ├── login/
+│   │   │   │   └── page.tsx
+│   │   │   ├── register/
+│   │   │   │   └── page.tsx
+│   │   │   └── layout.tsx
+│   │   ├── (blog)/
+│   │   │   ├── blog/
+│   │   │   │   ├── [slug]/
+│   │   │   │   │   └── page.tsx
+│   │   │   │   └── page.tsx
+│   │   │   └── layout.tsx
+│   │   ├── (dashboard)/
+│   │   │   ├── dashboard/
+│   │   │   │   ├── posts/
+│   │   │   │   │   └── page.tsx
+│   │   │   │   ├── projects/
+│   │   │   │   │   └── page.tsx
+│   │   │   │   └── page.tsx
+│   │   │   └── layout.tsx
+│   │   ├── (portfolio)/
+│   │   │   ├── projects/
+│   │   │   │   └── page.tsx
+│   │   │   ├── about/
+│   │   │   │   └── page.tsx
+│   │   │   └── page.tsx
+│   │   ├── api/
+│   │   │   ├── auth/
+│   │   │   │   └── [...nextauth]/
+│   │   │   │       └── route.ts
+│   │   │   ├── posts/
+│   │   │   │   └── route.ts
+│   │   │   └── projects/
+│   │   │       └── route.ts
+│   │   ├── error.tsx
+│   │   ├── loading.tsx
+│   │   ├── layout.tsx
+│   │   └── page.tsx
+│   ├── components/
+│   │   ├── providers/
+│   │   │   ├── supabase-provider.tsx
+│   │   │   └── theme-provider.tsx
+│   │   ├── ui/
+│   │   │   └── (shadcn components)
+│   │   ├── auth/
+│   │   │   ├── login-form.tsx
+│   │   │   └── register-form.tsx
+│   │   ├── blog/
+│   │   │   ├── post-card.tsx
+│   │   │   ├── post-editor.tsx
+│   │   │   └── post-list.tsx
+│   │   ├── portfolio/
+│   │   │   ├── project-card.tsx
+│   │   │   └── project-list.tsx
+│   │   ├── layout/
+│   │   │   ├── navbar.tsx
+│   │   │   ├── footer.tsx
+│   │   │   └── sidebar.tsx
+│   │   └── shared/
+│   │       ├── loading-spinner.tsx
+│   │       └── error-boundary.tsx
+│   ├── hooks/
+│   │   ├── use-auth.ts
+│   │   ├── use-posts.ts
+│   │   ├── use-projects.ts
+│   │   └── use-toast.ts
+│   ├── lib/
+│   │   ├── supabase/
+│   │   │   ├── client.ts
+│   │   │   └── server.ts
+│   │   ├── prisma.ts
+│   │   ├── utils.ts
+│   │   └── validators.ts
+│   ├── store/
+│   │   ├── slices/
+│   │   │   ├── authSlice.ts
+│   │   │   ├── blogSlice.ts
+│   │   │   └── themeSlice.ts
+│   │   └── store.ts
+│   ├── types/
+│   │   ├── auth.ts
+│   │   ├── blog.ts
+│   │   ├── portfolio.ts
+│   │   └── index.ts
+│   └── styles/
+│       └── globals.css
+├── prisma/
+│   ├── schema.prisma
+│   ├── seed.ts
+│   └── migrations/
+├── public/
+│   ├── images/
+│   └── fonts/
+├── tests/
+│   ├── unit/
+│   ├── integration/
+│   └── e2e/
+├── .env
+├── .env.example
+├── .gitignore
+├── next.config.js
+├── package.json
+├── tailwind.config.js
+└── tsconfig.json
